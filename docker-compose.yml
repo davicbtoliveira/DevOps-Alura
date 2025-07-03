@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    container_name: ellis-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount the application code for development (remove in production)
+      - .:/app
+
